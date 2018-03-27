@@ -1,0 +1,1 @@
+This folder contains completed .jars and neccesary libraries to be used in our applications

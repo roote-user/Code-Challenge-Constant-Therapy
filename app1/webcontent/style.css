@@ -1,0 +1,106 @@
+body {
+	background-color: olive;
+	text-align: center;
+	margin: 20px;
+	padding: 0;
+	font-family: helvetica, arial, sans-serif;
+	font-size: 14px;
+}
+
+.text{
+	display: none;
+	height: 0;
+	overflow: hidden;
+	width: 35%;
+	margin: auto;
+	-moz-transition: height 1s ease-in-out;
+	-webkit-transition: height 1s ease-in-out;
+	transition: height 1s ease-in-out;
+}
+
+.texton {
+	margin: auto;
+	display: block;
+	height: auto;
+}
+
+.whitecheck{
+	margin: 0px;
+	padding: 0px;
+	background-color: white;
+	height: 30px;
+	width: 30px;
+	border-style: solid;
+	border-width: 2px;
+	border-color: white;
+	display: inline-block;
+}
+
+.whitecheckhighlight{
+	margin: 0px;
+	padding: 0px;
+	background-color: white;
+	height: 30px;
+	width: 30px;
+	border-style: solid;
+	border-width: 2px;
+	border-color: red;
+	display: inline-block;
+}
+
+.blackcheck{
+	margin: 0px;
+	padding: 0px;
+	background-color: black;
+	height:30px;
+	width:30px;
+	border-style: solid;
+	border-width: 2px;
+	border-color: black;
+	display: inline-block
+}
+
+.blackcheckhighlight{
+	margin: 0px;
+	padding: 0px;
+	background-color: black;
+	height: 30px;
+	width: 30px;
+	border-style: solid;
+	border-width: 2px;
+	border-color: red;
+	display: inline-block
+}
+
+.Row{
+	length: 30px;
+	width: 30px;
+	background-color: transparent;
+}
+
+.Column{
+	length: 30px;
+	width: 30px;
+	background-color: transparent;
+}
+
+
+
+#click{
+	text-align:center;
+}
+
+#result{
+	text-align:center;
+}
+
+#chessboard{
+	border-style: solid;
+	border-width: 2px;
+	border-color: black;
+	margin: auto;
+	height:272px;
+	width: 272px;
+	display: grid;
+	grid-template-columns: auto auto auto auto auto auto auto auto;
+}

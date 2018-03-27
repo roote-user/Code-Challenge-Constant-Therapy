@@ -1,0 +1,1 @@
+This folder contains any servlet or not servlet related java classes, as well as their associated resources, for any class that cannot be contained within a .Jar

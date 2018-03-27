@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<web-app version="4.0"
+  xmlns="http://java.sun.com/xml/ns/javaee"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd">
+
+	<filter>
+		<filter-name>CorsFilter</filter-name>
+		<filter-class>org.apache.catalina.filters.CorsFilter</filter-class>
+		<init-param>
+			<param-name>cors.allowed.methods</param-name>
+			<param-value>GET,POST</param-value>
+		</init-param>
+	</filter>
+	<filter-mapping>
+		<filter-name>CorsFilter</filter-name>
+		<url-pattern>/*</url-pattern>
+	</filter-mapping>
+  
+	<welcome-file-list>
+		<welcome-file>index.html</welcome-file>
+		<welcome-file>index.htm</welcome-file>
+		<welcome-file>index.jsp</welcome-file>
+	</welcome-file-list>
+    <servlet>
+       <servlet-name>GraphServlet</servlet-name>
+       <servlet-class>GraphServlet</servlet-class>
+    </servlet>
+	<servlet>
+		<servlet-name>HelloWorldServlet</servlet-name>
+		<servlet-class>HelloServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>GraphServlet</servlet-name>
+		<url-pattern>/jaunt</url-pattern>
+	</servlet-mapping>
+    <servlet-mapping>
+       <servlet-name>HelloWorldServlet</servlet-name>
+       <url-pattern>/sayhello</url-pattern>
+    </servlet-mapping>
+
+
+</web-app>
